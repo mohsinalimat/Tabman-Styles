@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TwitterViewController.swift
 //  Twitter
 //
 //  Created by Merrick Sapsford on 21/03/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TwitterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
