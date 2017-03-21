@@ -26,5 +26,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Twitter Child View Controller-->
+        <scene sceneID="jy8-AV-TOd">
+            <objects>
+                <viewController storyboardIdentifier="TwitterChildViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uyn-Ll-xPr" customClass="TwitterChildViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BDB-xH-7HJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="FJP-Mr-ftY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VLA-L2-w4A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GU-xl-U1r">
+                                <rect key="frame" x="135" y="319.5" width="105.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1GU-xl-U1r" firstAttribute="centerY" secondItem="VLA-L2-w4A" secondAttribute="centerY" id="KDN-S5-f3D"/>
+                            <constraint firstItem="1GU-xl-U1r" firstAttribute="centerX" secondItem="VLA-L2-w4A" secondAttribute="centerX" id="k0Y-kw-bqi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="1GU-xl-U1r" id="FkJ-t7-tfD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fII-MM-d3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="38"/>
+        </scene>
     </scenes>
 </document>

@@ -7,19 +7,41 @@
 //
 
 import UIKit
+import Tabman
+import Pageboy
 
-class TwitterViewController: UIViewController {
+class TwitterViewController: TabmanViewController {
+    
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+extension TwitterViewController: PageboyViewControllerDataSource {
+    
+    func viewControllers(forPageboyViewController pageboyViewController: PageboyViewController) -> [UIViewController]? {
+        let tweetsViewController = childViewController(withTitle: "Tweets")
+        let repliesViewController = childViewController(withTitle: "Tweets & Replies")
+        let mediaViewController = childViewController(withTitle: "Media")
+        let likesViewController = childViewController(withTitle: "Likes")
+        
+        let viewControllers = [tweetsViewController, repliesViewController, mediaViewController, likesViewController]
+        var barItems = [TabmanBarItem]()
+        for viewController in viewControllers {
+            barItems.append(TabmanBarItem(title: viewController.pageTitle!.uppercased()))
+        }
+        return viewControllers
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func childViewController(withTitle title: String) -> TwitterChildViewController {
+        let storyboard = UIStoryboard(name: "Twitter", bundle: Bundle.main)
+        let identifier = "TwitterChildViewController"
+        
+        let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as! TwitterChildViewController
+        viewController.pageTitle = title
+        
+        return viewController
     }
-
-
+    
+    func defaultPageIndex(forPageboyViewController pageboyViewController: PageboyViewController) -> PageboyViewController.PageIndex? {
+        return nil
+    }
 }
 
