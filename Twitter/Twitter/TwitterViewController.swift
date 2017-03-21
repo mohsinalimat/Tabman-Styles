@@ -12,6 +12,12 @@ import Pageboy
 
 class TwitterViewController: TabmanViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.dataSource = self
+    }
+    
 }
 
 extension TwitterViewController: PageboyViewControllerDataSource {
