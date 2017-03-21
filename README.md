@@ -13,8 +13,8 @@ The following styles are available currently:
 
 ### Twitter
 
-<p align="center">
-    <img src="Artwork/styles/twitter-me.png" alt="Twitter-Me"/>
+<p align="left">
+    <img src="Artwork/styles/twitter-me.png" width="375" alt="Twitter-Me"/>
 
 A reproduction of the Tweet filter bar available in the 'Me' tab of the official Twitter app; which made an appearance in 2017.
 
