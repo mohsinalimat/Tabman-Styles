@@ -1,0 +1,18 @@
+PODS:
+  - Pageboy (0.4.11)
+  - PureLayout (3.0.2)
+  - Tabman (0.4.0):
+    - Pageboy (~> 0.4.0)
+    - PureLayout (~> 3.0.0)
+
+DEPENDENCIES:
+  - Tabman (~> 0.4.0)
+
+SPEC CHECKSUMS:
+  Pageboy: 32d84608c26425cd545c08d71232f7a423aa79c6
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Tabman: 98af683fa5c587854e9a656189d8b0402622585d
+
+PODFILE CHECKSUM: 67acf27a044057c50b607d3ec152e67e275a2cff
+
+COCOAPODS: 1.2.1.beta.1
